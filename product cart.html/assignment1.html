@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Practical Assignment</title>
+
+    <style>
+
+        /* =========================
+           Q1 - BACKGROUND
+           ========================= */
+
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-heading {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+        }
+
+        .background-paragraph {
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            padding: 30px;
+        }
+
+
+        /* =========================
+           Q2 - BORDER
+           ========================= */
+
+        .border-box {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .solid {
+            border: 5px solid red;
+        }
+
+        .dashed {
+            border: 5px dashed blue;
+        }
+
+        .dotted {
+            border: 5px dotted green;
+        }
+
+        .double {
+            border: 5px double purple;
+        }
+
+
+        /* =========================
+           Q3 - COLORS
+           ========================= */
+
+        .named-color {
+            color: red;
+        }
+
+        .hex-color {
+            color: #0000ff;
+        }
+
+        .rgb-color {
+            color: rgb(0, 128, 0);
+        }
+
+        .hsl-color {
+            color: hsl(300, 100%, 40%);
+        }
+
+
+        /* =========================
+           Q4 - PADDING
+           ========================= */
+
+        .padding-box {
+            background-color: lightblue;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .padding10 {
+            padding: 10px;
+        }
+
+        .padding20 {
+            padding: 20px;
+        }
+
+        .padding30 {
+            padding: 30px;
+        }
+
+
+        /* =========================
+           Q5 - MARGIN
+           ========================= */
+
+        .margin-box {
+            width: 200px;
+            height: 80px;
+            padding: 10px;
+        }
+
+        .margin10 {
+            background-color: lightcoral;
+            margin: 10px;
+        }
+
+        .margin20 {
+            background-color: lightgreen;
+            margin: 20px;
+        }
+
+        .margin30 {
+            background-color: lightblue;
+            margin: 30px;
+        }
+
+
+        /* =========================
+           Q6 - INLINE BLOCK
+           ========================= */
+
+        .product-card {
+            display: inline-block;
+
+            width: 150px;
+            padding: 10px;
+            margin: 5px;
+
+            background-color: white;
+            border: 2px solid black;
+
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .product-card img {
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         Q1 - BACKGROUND
+         ========================= -->
+
+    <h1 class="main-heading">
+        Q1 - Background
+    </h1>
+    <br>
+
+  
+    <p class="background-paragraph">
+        This paragraph contains a background image.
+        The background image will not repeat.
+    </p>
+
+
+    <!-- =========================
+         Q2 - BORDER
+         ========================= -->
+
+    <h1>Q2 - Border</h1>
+
+    <div class="border-box solid">
+        Solid Border
+    </div>
+
+    <div class="border-box dashed">
+        Dashed Border
+    </div>
+
+    <div class="border-box dotted">
+        Dotted Border
+    </div>
+
+    <div class="border-box double">
+        Double Border
+    </div>
+
+
+    <!-- =========================
+         Q3 - COLORS
+         ========================= -->
+
+    <h1>Q3 - Colors</h1>
+
+    <h2 class="named-color">
+        Named Color
+    </h2>
+
+    <h2 class="hex-color">
+        HEX Color
+    </h2>
+
+    <h2 class="rgb-color">
+        RGB Color
+    </h2>
+
+    <h2 class="hsl-color">
+        HSL Color
+    </h2>
+
+
+    <!-- =========================
+         Q4 - PADDING
+         ========================= -->
+
+    <h1>Q4 - Padding</h1>
+
+    <div class="padding-box padding10">
+        This box has 10px padding.
+    </div>
+
+    <div class="padding-box padding20">
+        This box has 20px padding.
+    </div>
+
+    <div class="padding-box padding30">
+        This box has 30px padding.
+    </div>
+
+
+    <!-- =========================
+         Q5 - MARGIN
+         ========================= -->
+
+    <h1>Q5 - Margin</h1>
+
+    <div class="margin-box margin10">
+        Margin = 10px
+    </div>
+
+    <div class="margin-box margin20">
+        Margin = 20px
+    </div>
+
+    <div class="margin-box margin30">
+        Margin = 30px
+    </div>
+
+
+    <!-- =========================
+         Q6 - INLINE BLOCK
+         ========================= -->
+
+    <h1>Q6 - Product Cards using Inline-Block</h1>
+
+
+    <div class="product-card">
+        <img src="product1.jpg" alt="Product 1">
+
+        <h3>Watch</h3>
+
+        <p>₹800</p>
+    </div>
+
+
+    <div class="product-card">
+        <img src="product2.jpg" alt="Product 2">
+
+        <h3>Battery</h3>
+
+        <p>₹1200</p>
+    </div>
+
+
+    <div class="product-card">
+        <img src="product3.jpg" alt="Product 3">
+
+        <h3>Mixer</h3>
+
+        <p>₹2000</p>
+    </div>
+
+
+    <div class="product-card">
+        <img src="product4.jpg" alt="Product 4">
+
+        <h3>Earpods</h3>
+
+        <p>₹1200</p>
+    </div>
+
+
+    <div class="product-card">
+        <img src="product5.jpg" alt="Product 5">
+
+        <h3>S Pen</h3>
+
+        <p>₹5000</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* ---------- Numbered List ---------- */
+ol{
+    list-style: none;
+    counter-reset: item;
+    padding-left: 25px;
+}
+
+ol li{
+    display: block;
+    counter-increment: item;
+}
+
+ol li::before{
+    content: counters(item,".") " ";
+    font-weight: bold;
+}
+
+ol ol{
+    counter-reset: item;
+}
+
+/* ---------- Emoji List ---------- */
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    display: inline-block;
+    width:20px;
+}
+
+ul > li::before{
+    content:"☑️";
+}
+
+ul ul > li::before{
+    content:"📌";
+}
+
+ul ul ul > li::before{
+    content:"☠️";
+}
+
+</style>
+</head>
+
+<body>
+
+<ol>
+    <li>India
+        <ol>
+            <li>Pune
+                <ol>
+                    <li>Lavale</li>
+                    <li>Aundh</li>
+                </ol>
+            </li>
+            <li>Mumbai</li>
+            <li>Chennai</li>
+        </ol>
+    </li>
+    <li>Japan</li>
+    <li>Korea</li>
+    <li>Singapore</li>
+    <li>Nepal</li>
+</ol>
+
+<hr>
+
+<ul>
+    <li>India
+        <ul>
+            <li>Pune
+                <ul>
+                    <li>Lavale</li>
+                    <li>Aundh</li>
+                </ul>
+            </li>
+            <li>Mumbai</li>
+            <li>Chennai</li>
+        </ul>
+    </li>
+    <li>Japan</li>
+    <li>Korea</li>
+    <li>Singapore</li>
+    <li>Nepal</li>
+</ul>
+
+</body>
+</html>
