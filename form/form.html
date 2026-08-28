@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Details Form</title>
+
+    <link rel="stylesheet" href="STYLE3.CSS">
+    
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Student Details Form</h1>
+
+        <form onsubmit="return validateName()">
+
+            <!-- Name and Email -->
+            <div class="row">
+
+                <div class="field">
+                    <label>Name *</label>
+
+                    <input type="text" id="name" oninput="validateName()" >
+
+                    <span class="error" id="nameError"></span>
+                </div>
+
+
+                <div class="field">
+                    <label>Email</label>
+
+                    <input type="email" id="email" oninput="validateEmail()">
+                    <span class="error" id="emailError"></span>
+                </div>
+
+            </div>
+
+
+            <!-- School and Phone -->
+            <div class="row">
+
+                <div class="field">
+                    <label>School</label>
+
+                    <input type="text" id="school" oninput="validateSchool()">
+                    <span class="error" id="schoolError"></span>
+                </div>
+
+
+                <div class="field">
+                    <label>Phone</label>
+
+                    <input type="tel" id="phone" onblur="validatePhone()">
+                    <span class="error" id="phoneError"></span>
+                </div>
+
+            </div>
+
+
+            <!-- Gender, Course and Location -->
+            <div class="bottom-section">
+
+                <!-- Gender -->
+                <div class="gender">
+
+                    <label>Gender</label>
+
+                    <div>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </div>
+
+                    <div>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </div>
+
+                </div>
+
+
+                <!-- Course -->
+                <div class="course">
+
+                    <label>Course</label>
+
+                    <div>
+                        <input type="checkbox" value="aiml">
+                        AIML
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="datascience">
+                        Datascience
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="fullstack">
+                        Fullstack
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="blockchain">
+                        Blockchain
+                    </div>
+
+                </div>
+
+
+                <!-- Institute Location -->
+                <div class="location">
+
+                    <label>Institute Location</label>
+
+                    <select id="location">
+
+                        <option value="pune">Pune</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
